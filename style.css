@@ -189,3 +189,27 @@ margin-bottom:15px;
   .trending {
     background: rgba(26, 36, 72, 1);
   }
+
+
+
+
+.market-row{
+  display:flex;
+  gap:20px;
+}
+
+.kingg, .pawnn{
+  flex:1;
+  padding:20px;
+  border-radius:10px;
+  background:#111;
+  color:white;
+}
+
+.kingg{
+  border:2px solid gold;
+}
+
+.pawnn{
+  border:2px solid crimson;
+}
