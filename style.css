@@ -33,7 +33,7 @@ body {
 .menu-btn {
   flex: 1 1 min(160px, 25%);
   padding: clamp(0.6rem, 2vw, 1rem);
-  font-size: clamp(1rem, 3vw, 1rem);
+  font-size: clamp(0.5rem, 2vw, 1rem);
   border: none ;
   background: rgba(0,0,0,0) ;
   color: white;
@@ -54,7 +54,7 @@ body {
 
 .container {
   max-width: 75rem;
-  width: 100%;
+  width: 80%;
   margin-inline: auto;
   padding: clamp(1rem, 4vw, 3rem);
 }
@@ -126,7 +126,7 @@ border: 3px solid rgba(255, 50, 36, 1);
 color:  rgba(8, 19, 42, 1) ;
 padding: 1%;
 
-font-size: 150% ;
+font-size: 140% ;
 border-radius: 250px;
 box-shadow:0 0 2vh rgba(255,57,1,0.2),
              0 0 4vh rgba(255,57,1,0.2),
