@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeepToken</title>
+  <link rel="stylesheet" href="predict.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <nav class="menu">
+      <button onclick="window.location.href='index.html'" class="menu-btn">King</button>
+      
+    <button onclick="window.location.href='speed.html'" class="menu-btn">Grow</button>
+      
+    <button onclick="window.location.href='hidden.html'" class="menu-btn">HG</button>
+     
+    <button onclick="window.location.href='predict.html'" class="menu-btn">Pred</button>
+    
+   <button onclick="window.location.href='airdrop.html'" class="menu-btn">Airdrop</button>
+
+    
+    <button onclick="window.location.href='strength.html'" class="menu-btn">Power</button>
+    
+        <button onclick="window.location.href='about.html'" class="menu-btn">about us</button>
+        
+            <button onclick="window.location.href='contact.html'" class="menu-btn">contact us</button>
+   </nav>
+
+
+  <h1  class="text-center mb-4">Pullback Probability</h1>
+  <div class="mb-3">
+    <label for="daySelect" class="form-label">Select Past Days (1-10):</label>
+    <select id="daySelect" class="form-select" style="width:120px;">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5" selected>5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+  </div>
+<div class="scrollable-div">
+  <main class="contained">
+    <section class="card">
+
+<div class="container">
+
+
+
+
+
+  <div id="coinsContainer">
+    <h1>Loading...</h1>
+  </div>
+</div>
+
+<p></p><br>
+
+
+
+<div class="market-row">
+
+  <div class="probability-analysis">
+    <h2>📊 Probability of Market Reversal</h2>
+
+    <p>
+      This section provides a **crypto market analysis** that predicts the
+      probability of a coin’s next movement. It helps users understand whether
+      a particular cryptocurrency is likely to experience a gain or a loss in
+      the near future.
+    </p>
+
+    <p>
+      The analysis is visually represented using **colored circles**:
+      <ul>
+        <li><span style="color:red;">🔴 Red Circle</span> – indicates potential loss</li>
+        <li><span style="color:green;">🟢 Green Circle</span> – indicates potential gain</li>
+      </ul>
+      The percentage inside the circle shows the **probability of a reversal**, helping traders anticipate possible market changes.
+    </p>
+
+    <p>
+      Users can **test historical data** over 1–10 days by adjusting the
+      day selector. This feature allows for backtesting and understanding how
+      the analysis would have performed in previous market conditions.
+    </p>
+
+    <p>
+      The page uses DeepToken’s algorithm to analyze **price patterns, trends,
+      and volatility** across multiple cryptocurrencies. By calculating the
+      likelihood of reversals, traders can make more informed decisions
+      about when to enter or exit positions.
+    </p>
+
+    <p>
+      In practical terms, the Probability of Market Reversal helps users:
+      <ul>
+        <li>Identify coins likely to switch from loss to gain or gain to loss</li>
+        <li>Plan trades with higher confidence</li>
+        <li>Reduce risk by understanding potential market swings</li>
+      </ul>
+    </p>
+
+    <p>
+      Overall, this page provides a **predictive overview of market movements**,
+      showing probabilities rather than certainties. It is a tool for smarter
+      trading and better risk management, allowing users to anticipate
+      potential reversals before they happen.
+    </p>
+
+  </div>
+
+</div>
+<p></p><br>
+<p></p><br>
+<hr style="color: black;">
+<footer style="background-color: rgba(8, 19, 42, 2); color: #fff; padding: 40px 20px; text-align: center; font-size: 0.95rem; line-height: 1.8; margin-top: 50px;">
+  
+  <h3 style="margin-bottom: 15px;">DeepToken</h3>
+  <p style="max-width: 700px; margin: 0 auto 20px;">
+    DeepToken provides real-time cryptocurrency analysis tools and insights to help users understand market trends, hidden opportunities, and coin strength. No sign-up is required to access our features.
+  </p>
+  <p style="margin-bottom: 15px;">
+    Quick Links: 
+    <a href="about.html" style="color:#00d1ff; text-decoration:none;">About</a> | 
+    <a href="contact.html" style="color:#00d1ff; text-decoration:none;">Contact</a> | 
+    <a href="privacy.html" style="color:#00d1ff; text-decoration:none;">Privacy Policy</a> |
+    <a href="terms.html" style="color:#00d1ff; text-decoration:none;">Terms of Service</a> |
+    <a href="warn.html" style="color:#00d1ff; text-decoration:none;">Disclaimer</a>
+  </p>
+  <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-top:20px;">
+    © 2026 DeepToken. All rights reserved.
+  </p>
+</footer>
+
+    </section>
+  </main>
+</div>
+<script src="predict.js"></script>
+</body>
+</html>

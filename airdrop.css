@@ -1,0 +1,175 @@
+/* -------------------- */
+/* RESET & FOUNDATION  */
+/* -------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 🔑 Entire site scales from here */
+  font-size: clamp(14px, 1.2vw, 18px);
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: rgb(8, 19, 42, 1);
+  color: white;
+  line-height: 1.6;
+}
+
+/* -------------------- */
+/* NAVIGATION           */
+/* -------------------- */
+
+.menu {
+  display: flex;
+  width: 100%;
+  background: rgb(8, 19, 42, 1);
+}
+
+.menu-btn {
+  flex: 1 1 min(160px, 25%);
+  padding: clamp(0.6rem, 2vw, 1rem);
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  border: none;
+  background: rgb(8, 19, 42, 1);
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (hover: hover) {
+  .menu-btn:hover {
+    background: #0056b3;
+  }
+}
+
+/* -------------------- */
+/* MAIN CONTENT         */
+/* -------------------- */
+
+.container {
+  max-width: 75rem;
+  width: 100%;
+  margin-inline: auto;
+  padding: clamp(1rem, 4vw, 3rem);
+}
+
+.cardd {
+  background: rgb(8, 19, 42, 1);
+  color: white;
+  padding: clamp(1rem, 3vw, 2rem);
+  border-radius: clamp(0.75rem, 1.5vw, 1.25rem);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* -------------------- */
+/* TYPOGRAPHY           */
+/* -------------------- */
+
+
+/* -------------------- */
+/* IMAGE                */
+/* -------------------- */
+
+img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: clamp(0.5rem, 1vw, 1rem);
+}
+
+
+
+
+.title {
+  text-align: center;
+  margin: 25px 0;
+  font-size: 2rem;
+  text-shadow: 0 0 8px rgba(0,255,255,0.6);
+}
+
+#projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(0,0,0,0.6);
+  border: 2px solid rgba(0,255,255,0.4);
+  border-radius: 12px;
+  width: 100%;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,255,255,0.7);
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  border: 1px solid rgba(0,255,255,0.5);
+}
+
+h3 {
+  margin: 5px 0;
+  text-align: center;
+}
+
+p {
+  margin: 4px 0;
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+  background: rgba(0,255,255,0.7);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: rgba(0,255,255,1);
+}
+
+
+  .scrollable-div {
+    
+   /* padding: 40px;
+      width: 400px;
+      color: white;
+      font-size: 18px;
+      border-radius: 15px;
+*/
+    background: rgba(255, 255, 255, 0);
+    border: 0.8px solid rgba(255, 255, 255, 0);
+    
+    width: 100%;          
+    max-height: 92vh;          
+    padding: 10px;
+    text-align: center;
+    overflow-y: auto;          
+
+  
+  }
