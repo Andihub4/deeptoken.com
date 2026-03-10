@@ -1,0 +1,95 @@
+/* -------------------- */
+/* RESET & FOUNDATION  */
+/* -------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 🔑 Entire site scales from here */
+  font-size: clamp(14px, 1.2vw, 18px);
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: rgba(8, 19, 42, 1);
+  color: white;
+  line-height: 1.6;
+}
+
+/* -------------------- */
+/* NAVIGATION           */
+/* -------------------- */
+
+.menu {
+  display: flex;
+  width: 100%;
+  background: #222;
+}
+
+.menu-btn {
+  flex: 1 1 min(160px, 25%);
+  padding: clamp(0.6rem, 2vw, 1rem);
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (hover: hover) {
+  .menu-btn:hover {
+    background: #0056b3;
+  }
+}
+
+/* -------------------- */
+/* MAIN CONTENT         */
+/* -------------------- */
+
+.container {
+  max-width: 75rem;
+  width: 100%;
+  margin-inline: auto;
+  padding: clamp(1rem, 4vw, 3rem);
+}
+
+.card {
+  background: rgba(8, 19, 42, 1);
+  color: white;
+  padding: clamp(1rem, 3vw, 2rem);
+  border-radius: clamp(0.75rem, 1.5vw, 1.25rem);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* -------------------- */
+/* TYPOGRAPHY           */
+/* -------------------- */
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: clamp(0.75rem, 2vw, 1.25rem);
+}
+
+p {
+  max-width: 65ch;
+  font-size: clamp(1rem, 1.6vw, 1.1rem);
+  margin-bottom: clamp(1rem, 3vw, 2rem);
+}
+
+/* -------------------- */
+/* IMAGE                */
+/* -------------------- */
+
+img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: clamp(0.5rem, 1vw, 1rem);
+}

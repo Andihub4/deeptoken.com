@@ -1,0 +1,169 @@
+/* -------------------- */
+/* RESET & FOUNDATION  */
+/* -------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 🔑 Entire site scales from here */
+  font-size: clamp(14px, 1.2vw, 18px);
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: rgba(8, 19, 42, 1);
+  color: white;
+  line-height: 1.6;
+}
+
+/* -------------------- */
+/* NAVIGATION           */
+/* -------------------- */
+
+.menu {
+  display: flex;
+  width: 100%;
+  background: rgba(8, 19, 42, 1);
+}
+
+.menu-btn {
+  flex: 1 1 min(160px, 25%);
+  padding: clamp(0.6rem, 2vw, 1rem);
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  border: none;
+  background: rgba(8, 19, 42, 1);
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (hover: hover) {
+  .menu-btn:hover {
+    background: #0056b3;
+  }
+}
+
+/* -------------------- */
+/* MAIN CONTENT         */
+/* -------------------- */
+
+.contained {
+  max-width: 75rem;
+  width: 100%;
+  margin-inline: auto;
+  padding: clamp(1rem, 4vw, 3rem);
+}
+
+.cardd {
+  background: rgba(8, 19, 42, 1);
+  padding: clamp(1rem, 3vw, 2rem);
+  border-radius: clamp(0.75rem, 1.5vw, 1.25rem);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* -------------------- */
+/* TYPOGRAPHY           */
+/* -------------------- */
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: clamp(0.75rem, 2vw, 1.25rem);
+}
+
+p {
+  max-width: 65ch;
+  font-size: clamp(1rem, 1.6vw, 1.1rem);
+  margin-bottom: clamp(1rem, 3vw, 2rem);
+}
+
+/* -------------------- */
+/* IMAGE                */
+/* -------------------- */
+
+img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: clamp(0.5rem, 1vw, 1rem);
+}
+
+
+
+.container { margin-top: 30px;
+width: 100%;}
+.card { background: rgba(20,30,60,0.95); padding: 20px; border-radius: 12px; }
+
+.bar-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;          /* space between bars */
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    justify-content: space-between; /* ensures bars spread out */
+}
+
+.bar {
+    flex-grow: 1;           /* bars expand to fill space */
+    min-width: 40px;        /* ensures bars don’t get too narrow */
+    max-width: 80px;        /* optional: prevents overly wide bars */
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: height 0.5s ease;
+}
+.bar-label {
+    position: absolute;
+    bottom: -22px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.bar-value {
+    position: absolute;
+    top: -20px;
+    font-size: 0.8rem;
+}
+
+.controls {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+select, button {
+    background: rgba(30,40,70,0.8);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+  .scrollable-div {
+    
+   /* padding: 40px;
+      width: 400px;
+      color: white;
+      font-size: 18px;
+      border-radius: 15px;
+*/
+    background: rgba(255, 255, 255, 0);
+    border: 0.8px solid rgba(255, 255, 255, 0);
+    
+    width: 100%;          
+    max-height: 92vh;          
+    padding: 10px;
+    
+    overflow-y: auto;          
+
+  
+  }
