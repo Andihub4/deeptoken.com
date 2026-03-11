@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://deeptoken.netlify.app/sitemap.xml
+Sitemap: https://crypotoken.netlify.app/sitemap.xml
